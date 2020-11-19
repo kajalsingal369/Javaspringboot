@@ -16,6 +16,7 @@ public class MainFile {
 		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
 		Employee e1=(Employee)context.getBean("empBean");
+		Project p1=(Project)context.getBean("prj1");
 		System.out.println(e1);
 		
 		

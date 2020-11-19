@@ -1,0 +1,15 @@
+2020-11-12 10:58:39.547 ERROR 7312 --- [http-nio-6060-exec-1] com.training.org.Application             : This is error message
+2020-11-12 14:41:54.090 ERROR 13680 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 6060 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 6060 or configure this application to listen on another port.
+

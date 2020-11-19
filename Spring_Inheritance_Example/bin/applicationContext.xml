@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+               
+	<!-- <bean id="empBean" class="com.training.org.Employee">
+	<property name="name" value="kajal"></property>
+	</bean>
+	<bean id='person'  class="com.training.org.Person">
+	<property name="empId" value="101"></property>
+	</bean> -->
+	 <bean id="add1" class="com.training.org.Address">
+	   <constructor-arg value="PUNE" type="String"></constructor-arg>
+	    <constructor-arg value="MH" type="String"></constructor-arg>
+	     <constructor-arg value="304" type="String"></constructor-arg>
+	      <constructor-arg value="405" type="String"></constructor-arg>
+	  
+	  </bean>
+	  <bean id="role1" class="com.training.org.Role">
+	   <constructor-arg value="supervisor" type="String"></constructor-arg>
+	    </bean>
+	   <bean id="pay" class="com.training.org.PaymentDetails">
+	   <constructor-arg value="1000" type="Integer"></constructor-arg>
+	    </bean>
+	   <bean id="book" class="com.training.org.Booking">
+	   <constructor-arg value="fables" type="String"></constructor-arg>
+	    <constructor-arg value="101" type="Integer"></constructor-arg>
+	    </bean>
+	     <bean id="custype" class="com.training.org.CustomerType">
+	   <constructor-arg value="VIP" type="String"></constructor-arg>
+	    </bean>
+	   <bean id="file" class="com.training.org.File">
+	   <constructor-arg value="2" type="Integer"></constructor-arg>
+	    <constructor-arg value="1024" type="Integer"></constructor-arg>
+	    </bean>
+	  <bean id="amen1" class="com.training.org.Amenity">
+	   <constructor-arg value="shelf" type="String"></constructor-arg>
+	    </bean>
+	  
+	<bean id="user" class="com.training.org.User">
+	<property name="email" value="abc@123gmail.com"></property>
+	<property name="password" value="abc@123"></property>
+	<property name="address" ref="add1"></property>
+	<property name="verified" value="true"></property>
+	<property name="enabled" value="true"></property>
+	<property name="roles" ref="role1"></property>
+	</bean>
+	<bean id="cust" class="com.training.org.Customer">
+	<property name="forename" value="kajal"></property>
+	<property name="surname" value="singhal"></property>
+	<property name="payDetails" ref="pay"></property>
+	<property name="booking" ref="book"></property>
+	<property name="customerType" ref="custype"></property>
+	</bean>
+	<bean id="vendor"  class="com.training.org.Vendor">
+	<property name="name" value="kajal"></property>
+	<property name="description" value="electronics"></property>
+	<property name="openingTime" value="8:00:00"></property>
+	<property name="closingTime" value="21:00:00"></property>
+	<property name="images" ref="file"></property>
+	<property name="offers" ref="book"></property>
+	<property name="amenity" ref="amen1"></property>
+	</bean>
+</beans> 
+
